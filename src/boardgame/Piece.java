@@ -2,23 +2,26 @@ package boardgame;
 
 public class Piece {
 	protected Position position;
+	
+	private Board board;
 
-	// construtor
-	public Piece(Position position) {
-		this.position = position;
-	}
-
-	public Position getPosition() {
-		return position;
-	}
-
-	public void setPosition(Position position) {
-		this.position = position;
+	
+	//contrutor
+	public Piece(Board board) {
+		this.board = board;
+		position = null;
 	}
 	
+	
+	protected Board getBoard() {
+		return board;
+	}
+
+
 	//metodos
-	public boolean possibleMovies() {
+	public boolean[][] possibleMovies() {
 		
+					
 	}
 	
 	public boolean possibleMove(Position position) {
