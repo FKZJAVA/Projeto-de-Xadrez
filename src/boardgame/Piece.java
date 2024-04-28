@@ -1,8 +1,8 @@
 package boardgame;
 
 public class Piece {
-	protected Position position;
 	
+	protected Position position;
 	private Board board;
 
 	
@@ -18,18 +18,6 @@ public class Piece {
 	}
 
 
-	//metodos
-	public boolean[][] possibleMovies() {
-		
-					
-	}
 	
-	public boolean possibleMove(Position position) {
-		
-	}
-	
-	public boolean isThereAnyPossibleMovie() {
-		
-	}
 
 }
