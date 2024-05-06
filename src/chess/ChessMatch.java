@@ -51,6 +51,10 @@ public class ChessMatch {
 		if(!board.thereIsAPiece(position)) {
 			throw new ChessException("Nao tem nenhuma peca nessa posicao");
 		}
+		if (!board.piece(position).isThereAnyPossibleMove()) {
+			throw new ChessException("Nao existe movimentos possiveis para peca escolhida");
+			
+		}
 	}
 	
 	
